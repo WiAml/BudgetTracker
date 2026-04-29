@@ -1,6 +1,5 @@
 import React from 'react';
 import { deleteTransaction } from '../services/api';
-
 const TransactionItem = ({ transaction, onUpdate }) => {
   const handleDelete = async () => {
     if (window.confirm("Are you sure you want to remove this transaction?")) {
