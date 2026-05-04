@@ -8,20 +8,21 @@ const TransactionItem = ({ transaction, onUpdate }) => {
         onUpdate(); 
       } catch (err) {
         console.error("Failed to delete the transaction:", err);
-        alert("Error deleting transaction. Please try again.");
+        alert("Note: Backend not connected. Item will remain until database is live.");
       }
     }
   };
-return (
+  const isIncome = transaction.amount > 0 || transaction.type === 'income';
+  return (
     <div className="list-item">
       <div className="item-info">
-        <strong>{transaction.description || transaction.category}</strong>
-        <small>{transaction.category}</small>
+        <strong>{transaction.text || transaction.description || "Transaction"}</strong>
+        <br />
+        <small>{transaction.category || "General"}</small>
       </div>
-      
       <div className="item-right">
-        <span className={transaction.type === 'income' ? 'pos' : 'neg'}>
-          {transaction.type === 'income' ? '+' : '-'}${transaction.amount.toFixed(2)}
+        <span className={isIncome ? 'pos' : 'neg'}>
+          {isIncome ? '+' : '-'}${Math.abs(transaction.amount).toFixed(2)}
         </span>
         <button onClick={handleDelete} className="delete-btn">
           Delete
