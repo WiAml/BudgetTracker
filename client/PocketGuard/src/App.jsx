@@ -6,7 +6,8 @@ import './App.css';
 const About = () => (
   <div className="container card">
     <h2>About Pocket Guard</h2>
-    <p>A simple way to keep track of spending habits[cite: 11].</p>
+    <p>This app is a simple way to keep track of spending habits and manage expenses! 
+    It keeps everything in one place and lets you see your finances in real time!</p>
   </div>
 );
 function App() {
