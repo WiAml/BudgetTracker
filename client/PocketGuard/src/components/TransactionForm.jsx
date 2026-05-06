@@ -6,7 +6,8 @@ const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.amount) return alert("Enter an amount");
     await createTransaction(form);
-    onUpdate();
+    if (onUpdate){
+      onUpdate();}
     setForm({ amount: '', type: 'income', category: 'food', description: '' });
 };
 return (

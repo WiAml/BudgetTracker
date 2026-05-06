@@ -2,6 +2,7 @@ import React from 'react';
 import { deleteTransaction } from '../services/api';
 const TransactionItem = ({ transaction, onUpdate }) => {
   const handleDelete = async () => {
+    console.log("Deleting ID:", transaction._id);
     if (window.confirm("Are you sure you want to remove this transaction?")) {
       try {
         await deleteTransaction(transaction._id);
@@ -12,7 +13,7 @@ const TransactionItem = ({ transaction, onUpdate }) => {
       }
     }
   };
-  const isIncome = transaction.amount > 0 || transaction.type === 'income';
+  const isIncome = transaction.type === 'income';
   return (
     <div className="list-item">
       <div className="item-info">
