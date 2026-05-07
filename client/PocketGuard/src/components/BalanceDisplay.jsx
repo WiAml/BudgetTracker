@@ -1,5 +1,4 @@
 import React from 'react';
-
 const BalanceDisplay = ({ transactions }) => {
   const total = transactions.reduce((acc, curr) =>{
     return curr.type === 'income' ? acc + curr.amount : acc - curr.amount;
