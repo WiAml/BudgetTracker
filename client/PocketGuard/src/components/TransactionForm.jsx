@@ -68,6 +68,7 @@ const TransactionForm = ({ onUpdate, editingTransaction, onSaveEdit, onCancel })
           <option value="bills">Bills</option>
           <option value="fun">Fun/Pleasure</option>
           <option value="misc">Misc</option>
+          <option value="check">Check</option>
         </select>
       </div>
 
