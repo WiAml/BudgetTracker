@@ -5,10 +5,10 @@ Final Project for WebDev 1 IT2830
 
 ## Team Members
 
-Will Amlong
-Ella Kutz
-Gavin Payton
-Haasin Khan
+Will Amlong,
+Ella Kutz,
+Gavin Payton,
+Haasin Khan,
 
 ## Setup Instructions
 
