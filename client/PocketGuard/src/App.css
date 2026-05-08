@@ -42,3 +42,29 @@
   }
   .pos { color: var(--success); font-weight: bold; }
   .neg { color: var(--danger); font-weight: bold; }
+  
+  .item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  }
+
+  .amount {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .button-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }

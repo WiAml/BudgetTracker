@@ -1,6 +1,6 @@
 import React from 'react';
 import { deleteTransaction } from '../services/api';
-const TransactionItem = ({ transaction, onUpdate }) => {
+const TransactionItem = ({ transaction, onUpdate, onEditClick}) => {
   const handleDelete = async () => {
     console.log("Deleting ID:", transaction._id);
     if (window.confirm("Are you sure you want to remove this transaction?")) {
@@ -25,6 +25,11 @@ const TransactionItem = ({ transaction, onUpdate }) => {
         <span className={isIncome ? 'pos' : 'neg'}>
           {isIncome ? '+' : '-'}${Math.abs(transaction.amount).toFixed(2)}
         </span>
+        <button 
+          onClick={() => onEditClick(transaction)} 
+          className="edit-btn">
+            Edit
+          </button>
         <button onClick={handleDelete} className="delete-btn">
           Delete
         </button>

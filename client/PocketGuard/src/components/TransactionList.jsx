@@ -1,6 +1,6 @@
 import React from 'react';
 import TransactionItem from './TransactionItem';
-const TransactionList = ({ transactions, onUpdate }) => { 
+const TransactionList = ({ transactions, onUpdate, onEditClick }) => { 
   return (
     <div className="card">
       <h2>History</h2>
@@ -10,6 +10,7 @@ const TransactionList = ({ transactions, onUpdate }) => {
             key={transaction._id} 
             transaction={transaction} 
             onUpdate={onUpdate} 
+            onEditClick={onEditClick}
           />
         ))}
       </ul>
