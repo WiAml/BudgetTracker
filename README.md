@@ -5,10 +5,10 @@ Final Project for WebDev 1 IT2830
 
 ## Team Members
 
-Will Amlong,
-Ella Kutz,
-Gavin Payton,
-Haasin Khan,
+Will Amlong (Backend and Mongo_db setup),
+Ella Kutz (Frontend and CSS),
+Gavin Payton (Backend),
+Haasin Khan (Frontend and CSS,
 
 ## Setup Instructions
 
