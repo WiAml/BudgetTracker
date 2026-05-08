@@ -8,7 +8,7 @@ Final Project for WebDev 1 IT2830
 Will Amlong (Backend and Mongo_db setup),
 Ella Kutz (Frontend and CSS),
 Gavin Payton (Backend),
-Haasin Khan (Frontend and CSS,
+Haasin Khan (Frontend and CSS)
 
 ## Setup Instructions
 
